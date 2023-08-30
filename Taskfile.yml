@@ -1,0 +1,29 @@
+# https://taskfile.dev
+
+version: '3'
+
+vars:
+  GREETING: Hello, World!
+
+tasks:
+  default:
+    cmds:
+      - echo "{{.GREETING}}"
+    silent: true
+
+  up-drupal:
+    cmds:
+      - docker compose up -d --remove-orphans
+  
+  up-frontend:
+    cmds:
+      - docker compose exec node npm install && docker compose exec node npm run dev
+    dir: frontend
+
+  up:
+    cmds:
+      - task: up-drupal
+      - task: up-frontend
+  stop:
+    cmds:
+      - docker compose stop
