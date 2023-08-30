@@ -1,0 +1,30 @@
+uuid: 74a71335-665c-46d2-b6e3-d22a46944419
+langcode: da
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - contact
+    - file
+    - filter
+    - search
+    - shortcut
+    - system
+_core:
+  default_config_hash: cFrlqjtkTfvY3RGccjJkPf1SGIfJ942IrxTLWAO4mgA
+id: authenticated
+label: 'Godkendt bruger'
+weight: 1
+is_admin: false
+permissions:
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'delete own files'
+  - 'post comments'
+  - 'search content'
+  - 'skip comment approval'
+  - 'use text format basic_html'

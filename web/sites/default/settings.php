@@ -872,4 +872,4 @@ $databases['default']['default'] = array (
   'driver' => 'mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 );
-$settings['config_sync_directory'] = 'sites/default/files/config_xFKCVlwI6IOrL9D4PkAbfL0buSywxHi2EoarUfj0XuW2F5ydbfEcM3DfeEmkFdzFUK04zey6eA/sync';
+$settings['config_sync_directory'] = __DIR__ . '/../../../configuration/drupal';

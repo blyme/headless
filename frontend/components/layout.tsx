@@ -1,21 +1,25 @@
-import Link from "next/link"
+import Link from "next/link";
 
-import { PreviewAlert } from "components/preview-alert"
+import { PreviewAlert } from "components/preview-alert";
+import { DrupalMenuLinkContent } from "next-drupal";
+import { Header } from "./header";
 
-export function Layout({ children }) {
+export interface LayoutProps {
+  menus: {
+    main: DrupalMenuLinkContent[];
+    footer: DrupalMenuLinkContent[];
+  };
+  children?: React.ReactNode;
+}
+
+export function Layout({ menus, children }: LayoutProps) {
   return (
     <>
       <PreviewAlert />
       <div className="max-w-screen-md px-6 mx-auto">
-        <header>
-          <div className="container flex items-center justify-between py-6 mx-auto">
-            <Link href="/" className="text-2xl font-semibold no-underline">
-              R E L O A D
-            </Link>
-          </div>
-        </header>
+        <Header menus={{ main: menus.main }} />
         <main className="container py-10 mx-auto">{children}</main>
       </div>
     </>
-  )
+  );
 }

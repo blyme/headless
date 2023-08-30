@@ -1,0 +1,13 @@
+uuid: 0ff5198a-cd34-49ae-b75a-236a45b1d0c9
+langcode: da
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
+name: Artikel
+type: article
+description: 'Brug <em>artikler</em> til tidsfølsomt indhold som nyheder, pressemeddelelser eller blogindlæg.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

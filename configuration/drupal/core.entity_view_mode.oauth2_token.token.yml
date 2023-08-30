@@ -1,0 +1,10 @@
+uuid: fe1fad40-c133-448b-8c81-d6abca1b8e48
+langcode: da
+status: true
+dependencies:
+  module:
+    - simple_oauth
+id: oauth2_token.token
+label: Token
+targetEntityType: oauth2_token
+cache: true

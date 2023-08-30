@@ -1,0 +1,22 @@
+uuid: 084a3550-af89-469e-a660-4ee328eca43a
+langcode: da
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - olivero
+_core:
+  default_config_hash: erQSEZF2XUjNmgTl0uNRBzmg18ZGXwUcw2FhApoeuHk
+id: olivero_content
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Primært sideindhold'
+  label_display: '0'
+  provider: system
+visibility: {  }

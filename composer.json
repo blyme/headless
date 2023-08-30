@@ -21,13 +21,15 @@
         "drupal/core-composer-scaffold": "^10.1",
         "drupal/core-project-message": "^10.1",
         "drupal/core-recommended": "^10.1",
+        "drupal/jsonapi_menu_items": "^1.2",
         "drupal/next": "^1.6",
+        "drupal/restui": "^1.21",
         "drush/drush": "^12.1"
     },
     "conflict": {
         "drupal/drupal": "*"
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "allow-plugins": {

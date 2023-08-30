@@ -1,0 +1,13 @@
+uuid: eb95e849-53f3-4bbb-bb73-66579c0f5a1c
+langcode: da
+status: true
+dependencies:
+  module:
+    - comment
+_core:
+  default_config_hash: C00dyL_W_5M0nFlgUB3lWUTUs96jn51Jw1MLHVEHZD0
+id: comment_publish_action
+label: 'Udgiv kommentar'
+type: comment
+plugin: 'entity:publish_action:comment'
+configuration: {  }
